@@ -95,8 +95,9 @@ def parse_claude_response(response_text):
     
     for line in lines:
         if line.startswith('=== FILE:'):
-            # Extract filename
-            current_file = line.replace('=== FILE:', '').strip()
+            # Extract filename and remove any trailing ===
+            filename = line.replace('=== FILE:', '').replace('===', '').strip()
+            current_file = filename
             current_content = []
             in_file = True
         elif line.startswith('=== END FILE'):
