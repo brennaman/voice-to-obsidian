@@ -1,0 +1,18 @@
+# Environment variables and secrets
+.env
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# macOS system files
+.DS_Store
+
+# Virtual environments
+venv/
+env/
+
+# Script-generated files
+.automation_count.txt
