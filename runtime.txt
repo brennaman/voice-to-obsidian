@@ -1,6 +1,1 @@
 python-3.11
-```
-
-3. **Update Procfile** (keep it as is):
-```
-web: python .github/scripts/linear_webhook_handler.py
